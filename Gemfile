@@ -12,7 +12,10 @@ end
 gem 'sass-rails',   '4.0.0'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
-
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
